@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game\Code\MainScene.cs">
+    <Files>
+      <File FileName="Assets\Game\Code\SphereFigure.cs" Line="9" Column="18" />
+      <File FileName="Assets\Game\Code\MainScene.cs" Line="36" Column="18" />
+      <File FileName="Assets\Game\Code\BaseFigure.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="H:\Job\UnityProjects\TestGame\Assets\Game\Code\SphereFigure.cs" line="22" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
