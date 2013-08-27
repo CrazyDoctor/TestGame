@@ -20,7 +20,7 @@ public class TimerScript : MonoBehaviour
 	void OnGUI()
 	{
 		timeText = "Время в игре: " + hours + ":" + minutes + ":" + seconds;
-		GUI.Label(new Rect(Screen.width - 200, Screen.height - 75, 150, 25), timeText);
+		GUI.Label(new Rect(10, Screen.height - 75, 150, 25), timeText);
 	}
 	
 	void Timer()

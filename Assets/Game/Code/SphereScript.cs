@@ -75,8 +75,6 @@ public class SphereScript : BaseFigure
 		}
 		if(colliderSphere != null)
 		{
-			colliderSphere.radius = this._figureSize;
-			
 			//раобтаем с localScale (масштабируем сферу, чтобу разница в радиусах была видна)
 			double scaleValue = this._figureSize / SphereScript.MinSize + 2;
 			this.transform.localScale = new Vector3((float)scaleValue, (float)scaleValue, (float)scaleValue);
@@ -190,6 +188,22 @@ public class SphereScript : BaseFigure
 		else
 		{
 			DestroyObject(gameObject);
+		}
+	}
+	
+	void OnMouseDown()
+	{
+		if(gameObject != null)
+		{
+			SphereScript sphere = gameObject.GetComponent<SphereScript>();
+			//взяли сферу, на которую нажали, если она есть (объект является сферой и он существует), то увеличичваем счет в игре и уничтожаем объект сферы
+			if(sphere != null)
+			{
+				sphere.PlayShoot();
+				MainScene.AllPoints += sphere.PointsCount;
+				Destroy(gameObject);
+				_divValue = MainScene.AllPoints / 1000;
+			}
 		}
 	}
 	
